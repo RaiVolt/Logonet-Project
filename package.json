@@ -1,0 +1,22 @@
+{
+  "name": "logonet",
+  "version": "1.0.0",
+  "description": "logonet angularjs test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Machado",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.0",
+    "angular-ui-router": "^1.0.18",
+    "live-server": "^1.2.0",
+    "lodash": "^4.17.10",
+    "restangular": "^1.6.1",
+    "ui-router": "^1.0.0-alpha.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
