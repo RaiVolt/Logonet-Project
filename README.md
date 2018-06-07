@@ -13,7 +13,7 @@ $ npm install
 $ npm install -g live-server
 ```
 
-## Running in dev mode
+## Running server
 
 ```
 $ live-server
