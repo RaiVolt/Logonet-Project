@@ -18,7 +18,7 @@ $ npm install -g live-server
 ```
 $ live-server
 ```
-Visit http://localhost:3000/ from your browser of choice.
+Visit http://127.0.0.1:8080/ from your browser of choice.
 Server is visible from the local network as well.
 
 ## Login 
