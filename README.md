@@ -25,5 +25,6 @@ Server is visible from the local network as well.
 
 To login you need to use this credentials. 
 
-**Email:** peter@klaven.com;
+**Email:** peter@klaven.com
+
 **Password:** cityslicka
