@@ -2,7 +2,6 @@
     'use strict';
     angular.module('logonetApp').controller('listController', function($scope, $state, $location, $rootScope, listService) {
         // List Controller example
-        $scope.name = 'Rafael Machado';
         listService.all().then((user) => {
             $scope.users = user.data;
             const id = user.data.id
@@ -28,7 +27,7 @@
         $scope.save = () => {
 
             const save = {
-                name: $scope.name,
+                name: $scope.f_name,
                 job: $scope.job
             }
 
