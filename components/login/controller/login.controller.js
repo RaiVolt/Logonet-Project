@@ -7,6 +7,8 @@
             email: 'peter@klaven.com',
             password: 'cityslicka'
         }
+        $scope.email = 'peter@klaven.com';
+        $scope.password = 'cityslicka';
 
         $scope.submit = () => {
             const log = {

@@ -24,6 +24,25 @@
             }
         });
 
+
+        $scope.save = () => {
+
+            const save = {
+                name: $scope.name,
+                job: $scope.job
+            }
+
+            listService.create(save).then((response) => {;
+                const id = response.id;
+                const createdAt = response.createdAt;
+                alert(`ID: ${id}\nCreated: ${createdAt} `);
+                $('.form-control.val').val('');
+                $('.modal.fade').removeClass('show');
+                $('.modal-backdrop.fade').remove();
+                $('.login-page').removeClass('modal-open');
+            })
+        }
+
         const userId = _.last($location.path().split('/'));
 
         const getUser = (userId) => {

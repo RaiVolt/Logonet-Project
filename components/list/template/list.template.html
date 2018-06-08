@@ -71,6 +71,9 @@
             <div class="row">
                 <div class="col-md-12 ml-auto mr-auto">
                     <h4 class="title text-center">Users</h4>
+                    <div class="row justify-content-end" style="margin: 0px;">
+                        <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Create</button></td>
+                    </div>
                     <div class="nav-align-center">
                         <table id="userlist">
                             <tr>
@@ -85,8 +88,9 @@
                                 <td>{{user.id}}</td>
                                 <td ng-model="name">{{user.first_name}}</td>
                                 <td ng-model="last">{{user.last_name}}</td>
-                                <td><button ng-click="up()">Update</button></td>
-                                <td> <button ng-click="del()">Delete</button> </td>
+
+                                <td><button class="btn btn-primary btn-sm" ng-click="up()">Update</button></td>
+                                <td> <button class="btn btn-primary btn-sm" ng-click="del()">Delete</button> </td>
                                 <td> <a ui-sref="profile({id: user.id})">Link</a> </td>
                             </tr>
                         </table>
@@ -98,6 +102,37 @@
         </div>
     </div>
 
+    <!-- Start Modal-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                    <h4 class="title title-up">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="form-group">
+                            <input type="text" value="" ng-modal="name" placeholder="Name" class="form-control val" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-12">
+                        <div class="form-group">
+                            <input type="text" value="" ng-modal="job" placeholder="job" class="form-control val" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" ng-click="save()">Save</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer footer-absolute">
         <div class="container">
             <nav>

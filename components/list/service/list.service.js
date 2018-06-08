@@ -19,7 +19,7 @@
         };
 
         users.create = function(data) {
-            return user.post(data);
+            return CrosRestangular.one('users').post();;
         };
 
         users.get = function(id) {
